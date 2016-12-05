@@ -1,1 +1,91 @@
 *{outline: solid 1px rgba(255,0,0,.3)}
+/*-----------------------------------------HEADER*/
+
+header{
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.navbar{
+    height: 600px;
+}
+/*-----------------------------------------HERO*/
+.hero{
+    text-align: center;
+}
+.texto{
+    margin-top: -450px;
+}
+.hero hr{
+    border: 1px solid #f05f40;
+    width: 40px;
+}
+.hero button{
+    background-color: #f05f40;
+}
+.hero, .me{
+    color: white;
+}
+/*-----------------------------------------SOBRE MI */
+.me{
+    background-color: #f05f40;
+    padding: 40px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+.me hr{
+    border: 1px solid #fff;
+    width: 40px;
+}
+/*-----------------------------------------SERVICIOS*/
+.servicios .icon-container{
+    color: #f05f40;
+}
+.icon-container{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+.servicios hr{
+    border: 1px solid #f05f40;
+    width: 40px;
+}
+/*-----------------------------------------MIS TRABAJOS*/
+.portafolio{
+    margin-top: 40px;
+    background-color: #222222;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.portafolio p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+.fotos .col-md-4{
+    padding: 0;
+}
+.portafolio p{
+    color: white;
+}
+
+/*---------------------------------------CONTACTAME*/
+.contact hr{
+    border: 1px solid #f05f40;
+    width: 40px;
+}
+.contact p{
+    margin-bottom: 35px;
+}
+.contact, .icon-container{
+    color: black;
+}
+.contact a{
+    color: #f05f40;
+}
+/*---------------------------------------MEDIAS*/

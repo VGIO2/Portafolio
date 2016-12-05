@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="icons/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="icon/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
 	<title>Portafolio</title>
 </head>
 <body>
-<!-------------------------------------------------------------------------HEADER-->
+<!------------------------------------------------HEADER-->
 <header>
-   <header>
-    <nav class="navbar navbar-default">
-      
+    <nav class="navbar">
        <div class="container">
             <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#icon-menu" aria-expanded="false">
@@ -25,9 +28,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#">Mi Portafolio</a>
+                <a class="navbar-brand" href="#">Mi Portafolio</a>
                
             </div>
+           
             
             <div class="collapse navbar-collapse" id="icon-menu">
               <ul class="nav navbar-nav navbar-right">
@@ -38,18 +42,18 @@
               </ul>
             </div>
        </div>
-
     </nav>
 </header>
-</header>
-<!-------------------------------------------------------------------------HERO-->
+<!----------------------------------------------------HERO-->
 <section class="hero">
    <div class="container">
        <div class="row">
-           <h1>HOLA, MI NOMBRE ES GIOVANNA SOY CODER DE LABORATORIA </h1>
+          <div class="texto">
+           <h1 class="text-center">HOLA, MI NOMBRE ES GIOVANNA <br> SOY CODER DE LABORATORIA </h1>
            <hr>
-           <p>Estas interesado en desarrollar un sitio web, o necesitas una frontend developer, yo te puedo ayudar con los diferentes servicios que brindo</p>
-           <button type="button" class="btn btn-primary">CONOCE MÁS</button>
+           <p class="text-center">Estas interesado en desarrollar un sitio web, o necesitas una frontend developer, yo te puedo ayudar con los diferentes servicios que brindo</p>
+           <button type="button" class="btn">CONOCE MÁS</button>
+          </div>
        </div>
    </div>
 </section>
@@ -58,9 +62,9 @@
    <div class="container">
        <div class="row">
            <div class="col-md-8 col-md-offset-2">
-               <h3>SOBRE MI</h3>
+               <h3 class="text-center">SOBRE MI</h3>
                <hr>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quisquam  dignissimos fuga ea vel! Modi temporibus minus, perspiciatis eligendi molestiae.</p>
+               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quisquam  dignissimos fuga ea vel! Modi temporibus minus, perspiciatis eligendi molestiae.</p>
            </div>
        </div>
    </div>
@@ -69,7 +73,8 @@
 <section class="servicios">
    <div class="container">
        <div class="row">
-            <h3>SERVICIOS</h3>
+            <h3 class="text-center">SERVICIOS</h3>
+              <hr>
                <div class="col-md-2 col-md-offset-2">
                   <div class="icon-container"><i class="icon-diamond"></i></div>
                    <h4 class="text-center">Desarrollo de plantillas</h4>
@@ -99,33 +104,36 @@
 
 <!-------------------------------------------------------------------------MIS TRABAJOS-->
 <section class="portafolio">
-   <div class="container">
+   <div class="container-fluid">
       <div class="fotos">
        <div class="row">
            <div class="col-md-4">
-               <img src="img/1.jpg" alt="">
+               <img class="img-responsive" src="img/1.jpg" alt="">
            </div>
            <div class="col-md-4">
-               <img src="img/2.jpg" alt="">
+               <img class="img-responsive" src="img/2.jpg" alt="">
            </div>
            <div class="col-md-4">
-               <img src="img/3.jpg" alt="">
+                    <div class="fondo">
+                       <img class="img-responsive" src="img/3.jpg" alt="">
+                        <p>CATEGORÍA <br>Nombre proyecto</p>
+                    </div>
            </div>
        </div>
        
        <div class="row">
            <div class="col-md-4">
-               <img src="img/4.jpg" alt="">
+               <img class="img-responsive" src="img/4.jpg" alt="">
            </div>
            <div class="col-md-4">
-               <img src="img/5.jpg" alt="">
+               <img class="img-responsive" src="img/5.jpg" alt="">
            </div>
            <div class="col-md-4">
-               <img src="img/6.jpg" alt="">
+               <img class="img-responsive" src="img/6.jpg" alt="">
            </div>
         </div>
         
-        <p>Si quieres saber más de mi proyecto revisa mi github</p>
+        <p class="text-center">Si quieres saber más de mi proyecto revisa mi github</p>
         <button type="button" class="btn btn-default">VER MI GITHUB</button>
        </div>
    </div>
@@ -135,21 +143,22 @@
    <div class="container">
        <div class="row">
            <div class="col-md-8 col-md-offset-2">
-               <h3>CONTÁCTAME</h3>
+               <h3 class="text-center">CONTÁCTAME</h3>
                <hr>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consectetur, unde vitae obcaecati a nesciunt. Qui voluptas commodi blanditiis, modi odit eligendi perferendis incidunt pariatur dicta quo obcaecati ea sequi!</p>
+               <p>¿Listo para empezar tu siguiente proyecto?¿Te gusta lo que has visto? Genial!, dame una llamada o envíame un correo y te responderé lo más rápido que pueda!</p>
            </div>
        </div>
        
        <div class="row">
            <div class="col-md-2 col-md-offset-4">
                <div class="icon-container"><i class="icon-phone"></i></div>
-               <p>kjshdkjdfhsadc</p>
+               <p class="text-center">945380892</p>
            </div>
            
            <div class="col-md-2">
-               <div class="icon-container"><i class="icon-envelop"></i></div>
-               <p>sjchjskhdjshda</p>
+               <div class="icon-container"><i class="icon-mail"></i></div>
+               <div class="text-center"><a href="#">orurog@gmail.com</a></div>
+               
            </div>
        </div>
    </div>
