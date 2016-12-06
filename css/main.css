@@ -12,6 +12,17 @@ header{
 .navbar{
     height: 600px;
 }
+.navbar-header a{
+    color: white;
+}
+.navbar ul li a{
+    color: white;
+    background-color: rgba(240,95,64,0.6)
+}
+.icon-th-menu{
+    color: white;
+    width: 30px;
+}
 /*-----------------------------------------HERO*/
 .hero{
     text-align: center;
@@ -89,3 +100,18 @@ header{
     color: #f05f40;
 }
 /*---------------------------------------MEDIAS*/
+
+@media screen and (max-width:700px){
+    .navbar-header{
+        background-color: white;
+    }
+    .navbar-header a{
+        color: black;
+    }
+    .navbar ul li a{
+    color: black;
+    }
+    .icon-th-menu{
+     color: black;
+    }
+}
